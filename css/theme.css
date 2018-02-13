@@ -920,9 +920,53 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     }
 }
 
+/* REPLY */
+.reply {
+    display: flex;
+}
+
+.reply-content {
+    width: 100%;
+}
+
+.reply-content-header {
+    display: flex;
+}
+
+.reply-content-header-author {
+    display: inline-flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: #AC1223;
+}
+
+.reply-author-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 16px;
+    background-color: #440800;
+}
+
+.reply-content-header-date {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.reply-content-body {
+    margin-top: 4px;
+}
+
 /* REPOST */
 .repost-button.mypost div svg {
     color: #B8B8B8;
+}
+
+/* VOTE BUTTONS */
+.votes-buttons {
+    display: inline-block;
 }
 
 /* EDITOR */
@@ -958,6 +1002,10 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     margin-top: 16px;
 }
 
+.editor-page-editor-post {
+    text-align: right;
+}
+
 @media(max-width: 425px) {
 
     .editor-page {
@@ -989,15 +1037,20 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 }
 
 .profile-header-top-section-buttons {
-    text-align: right;
     padding: 8px;
     height: 42px;
     line-height: 42px;
+    display: flex;
 }
 
-.profile-header-top-section-buttons button {
-    vertical-align: middle;
-    margin-left: 8px;
+
+.profile-header-top-section-buttons-left {
+    display: inline-flex;
+}
+
+.profile-header-top-section-buttons-right {
+    display: inline-flex;
+    margin-left: auto;
 }
 
 .profile-header-top-section-information-profile {
@@ -1174,6 +1227,11 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 /* DIALOG IMAGE */
 .dialog-image div div div div {
 
+}
+
+/* DIALOG EDIT PROFILE */
+.dialog-edit-profile-input {
+    width: 100% !important;
 }
 
 /* VIP CARD */
