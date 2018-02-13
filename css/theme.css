@@ -1013,6 +1013,18 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     }
 }
 
+/* EDITOR */
+.vip-editor {
+    width: 100%;
+    margin-bottom: 32px;
+    background-color: #0c0203;
+}
+
+.vip-editor-inner {
+    padding: 16px;
+}
+
+
 /* PROFILE */
 
 .profile-header {
