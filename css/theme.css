@@ -311,14 +311,18 @@ button.medium-button {
     display: block;
     overflow: hidden;
     position: fixed;
-    min-width: calc(100% - 104px);
+    height: 40px;
+    width: calc(100% - 124px);
+    max-width: calc(100% - 124px);
 }
 
 .inner-toolbar-links {
+    position: initial;
     display: inline-block;
 }
 
 .inner-toolbar-input {
+    position: initial;
     display: inline-block;
 }
 
@@ -341,7 +345,7 @@ button.medium-button {
     cursor: inherit;
     border: none;
     color: white;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Source Sans Pro", "Open Sans", Arial, sans-serif;
     height: 38px;
     line-height: 38px;
     font-size: 16px;
@@ -459,6 +463,21 @@ button.medium-button {
     background-position: calc(50% + 128px) 50%;
     background-size: 42vh;
     background-repeat: no-repeat;*/
+}
+
+/* FEED */
+.feed-cards {
+    padding: 16px 16px 32px 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+@media (max-width: 425px) {
+
+    .feed-cards {
+        padding: 16px 0px 32px 0px;
+    }
 }
 
 /* HOME */
@@ -1018,12 +1037,37 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     width: 100%;
     margin-bottom: 32px;
     background-color: #0c0203;
+    font-size: 18px;
 }
 
-.vip-editor-inner {
-    padding: 16px;
+.vip-editor-header {
+    padding: 16px 16px 8px 16px;
+    display: flex;
 }
 
+.vip-editor-header a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #ac1223;
+}
+
+.vip-editor-body {
+    padding: 8px 16px 8px 16px;
+}
+
+.vip-editor-footer {
+    padding: 8px 16px;
+    display: flex;
+}
+
+.vip-editor-footer-left {
+    display: inline-flex;
+}
+
+.vip-editor-footer-right {
+    display: inline-flex;
+    margin-left: auto;
+}
 
 /* PROFILE */
 
@@ -1327,16 +1371,16 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     height: 400px;
 }
 
-.vip-card-body-media-left, .vip-card-body-media-left {
+.vip-card-body-media-left, .vip-card-body-media-right {
     height: 100%;
     width: 50%;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .vip-card-body-media-top, .vip-card-body-media-bottom {
     height: 50%;
     width: 100%;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .vip-card-body-media.image, .vip-card-body-media-left.image, .vip-card-body-media-left.image, .vip-card-body-media-top, .vip-card-body-media-bottom {
