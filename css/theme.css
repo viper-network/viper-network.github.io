@@ -142,6 +142,7 @@ pre::-webkit-scrollbar  {
 
 .fixed-fab-button {
     position: fixed;
+    z-index: 444;
     right: 32px;
     bottom: 32px
 }
@@ -442,9 +443,7 @@ button.medium-button {
 }
 
 .menu-bar-menu-item.current {
-    background: linear-gradient(to right, #460900, #210608, #0c0203);
-    border-top: 1px solid #650a06;
-    border-bottom: 1px solid #650a06;
+    background: linear-gradient(to right, #470901, #210608, #0c0203) !important;
 }
 
 @media print {
