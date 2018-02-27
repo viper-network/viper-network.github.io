@@ -956,6 +956,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 /* FILE UPLOADER */
 .file-upload-preview {
     display: flex;
+    margin-top: 32px;
 }
 
 .file-upload-preview .actions {
@@ -964,24 +965,28 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 
 .file-upload-preview.audio .media {
     width: 70%;
-    display: inline-flex;
+    position: relative;
 }
 
 .file-upload-preview.video .media {
     width: 50%;
-    display: inline-flex;
+    position: relative;
 }
 
 .file-upload-preview.audio .poster {
     width: 30%;
-    display: inline-block;
-    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .file-upload-preview.video .poster {
     width: 50%;
-    display: inline-block;
-    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .file-upload-poster-image {
@@ -995,20 +1000,17 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 
 @media (max-width: 800px) {
 
-    .file-upload-preview.audio .media {
-        width: 100%;
+    .file-upload-preview {
+        display: block;
     }
 
-    .file-upload-preview.video .media {
-        width: 100%;
+    .file-upload-preview .media {
+        width: 100% !important;
     }
 
-    .file-upload-preview.audio .poster {
-        width: 100%;
-    }
-
-    .file-upload-preview.video .poster {
-        width: 100%;
+    .file-upload-preview .poster {
+        margin-top: 32px;
+        width: 100% !important;
     }
 }
 
