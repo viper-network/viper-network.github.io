@@ -459,7 +459,7 @@ button.medium-button {
     width: calc(100% - 256px);
     margin-left: 256px;
     min-height: calc(100% - 64px);
-    background-color: #1f0205;
+    background-color: #1b0001;
     color: #ffffff;
 
     /*background-attachment: fixed;
