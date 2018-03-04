@@ -24,6 +24,25 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", Arial, sans-serif !important;
 }
 
+blockquote {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+blockquote::before {
+    content: "┌";
+    position: absolute;
+    margin-left: -1em;
+    margin-top: -1em;
+}
+
+blockquote::after {
+    content: "┘";
+    position: absolute;
+    margin-right: -1em;
+    margin-bottom: -1em;
+}
+
 a:link, a:hover, a:active, a:visited {
     /*color: #AC0623;*/
     color: #ffffff;
@@ -1045,6 +1064,11 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 
 }
 
+.public-DraftEditorPlaceholder-root {
+
+    margin-bottom: -1em;
+}
+
 /* VOTES */
 .vote-text {
     cursor: pointer;
@@ -1603,8 +1627,8 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 /* SETTINGS */
 .settings-card {
     max-width: 800px;
-    margin: 32px auto 16px auto;
-    padding: 16px 32px;
+    margin: 32px auto 32px auto;
+    padding: 32px 32px;
     background-color: #0c0203;
     border-radius: 2px;
 }
