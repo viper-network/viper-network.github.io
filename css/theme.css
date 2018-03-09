@@ -1325,6 +1325,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     height: 128px;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
     margin: auto;
     background-position: center center;
     background-color: #440800;
