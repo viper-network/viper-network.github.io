@@ -192,7 +192,7 @@ tbody tr:hover td {
 }
 
 .medium-primary-color {
-    background-color: #130303 !important; /* #190506   */
+    background-color: #190506 !important; /* #130303   */
     color: #ffffff;
 }
 
@@ -314,8 +314,8 @@ button.medium-button {
 }
 
 .outer-toolbar-title span, .menu-drawer-toolbar-title span {
-    color: #49000D;
-    text-shadow: #000000 0 0 9px;
+    color: #FFFFFF;
+    text-shadow: #49000D 0 0 19px;
 }
 
 .outer-toolbar-title {
@@ -535,7 +535,7 @@ button.medium-button {
     width: calc(100% - 256px);
     margin-left: 256px;
     min-height: calc(100% - 64px);
-    background-color: #120101; /* #130101 */ /* #120101 */ /* #1b0001 */
+    background-color: #1b0001; /* #130101 */ /* #120101 */ /* #1b0001 */
     color: #ffffff;
 
     /*background-attachment: fixed;
