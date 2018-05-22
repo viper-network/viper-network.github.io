@@ -192,7 +192,7 @@ tbody tr:hover td {
 }
 
 .medium-primary-color {
-    background-color: #190506 !important;
+    background-color: #130303 !important; /* #190506   */
     color: #ffffff;
 }
 
@@ -535,7 +535,7 @@ button.medium-button {
     width: calc(100% - 256px);
     margin-left: 256px;
     min-height: calc(100% - 64px);
-    background-color: #1b0001;
+    background-color: #120101; /* #130101 */ /* #120101 */ /* #1b0001 */
     color: #ffffff;
 
     /*background-attachment: fixed;
@@ -668,7 +668,7 @@ button.medium-button {
     line-height: 40px;
     position: fixed;
     width: calc(100% - 320px);
-    background-color: #1f0205;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 4;
 }
 
@@ -1444,7 +1444,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     height: 128px;
     border-radius: 50%;
     display: inline-block;
-    cursor: wait;
+    cursor: pointer;
     margin: auto;
     background-position: center center;
     background-color: #440800;
