@@ -20,27 +20,52 @@ img {
     max-width: 100%;
 }
 
+/*h1 {
+    border-bottom: 1px solid #AC1223;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.37em;
+}*/
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", Arial, sans-serif !important;
 }
 
 blockquote {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    position: relative;
 }
 
 blockquote::before {
     content: "┌";
     position: absolute;
-    margin-left: -1em;
-    margin-top: -1em;
+    margin-left: -1.25em;
+    margin-top: -1.25em;
+    left: 0;
+    top: 0;
+    transition: all ease-out .24s;
+}
+
+blockquote:hover::before {
+    margin-left: -1.75em;
+    margin-top: -1.75em;
+    transition: all ease-in .12s;
 }
 
 blockquote::after {
     content: "┘";
     position: absolute;
-    margin-right: -1em;
-    margin-bottom: -1em;
+    margin-right: -1.25em;
+    margin-bottom: -1.25em;
+    right: 0;
+    bottom: 0;
+    transition: all ease-out .24s;
+}
+
+blockquote:hover::after {
+    margin-right: -1.75em;
+    margin-bottom: -1.75em;
+    transition: all ease-in .12s;
 }
 
 a:link, a:hover, a:active, a:visited {
@@ -109,6 +134,33 @@ pre {
 pre::-webkit-scrollbar  {
     width: 4px;
     height: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr th {
+    padding: 8px 18px;
+    background-color: rgba(71, 9, 1, 0.34); /* Heil */
+    transition: background-color ease-out .24s;
+}
+
+thead tr:hover th {
+    background-color: rgba(71, 9, 1, 0.63); /* Matias */
+    transition: background-color ease-in .12s;
+}
+
+tbody tr td {
+    padding: 8px;
+    background-color: rgba(71, 9, 1, 0.14); /* ma */
+    transition: background-color ease-out .24s;
+}
+
+tbody tr:hover td {
+    background-color: rgba(71, 9, 1, 0.73); /* i pray */
+    transition: background-color ease-in .12s;
 }
 
 @media print {
@@ -257,8 +309,13 @@ button.medium-button {
     display: none !important;
 }
 
-.outer-toolbar-title, .menu-drawer-toolbar-title {
+.outer-toolbar-title, .menu-drawer-toolbar-title, .outer-toolbar-title span, .menu-drawer-toolbar-title span {
     font-family: "Inversionz", "Open Sans", sans-serif !important;
+}
+
+.outer-toolbar-title span, .menu-drawer-toolbar-title span {
+    color: #49000D;
+    text-shadow: #000000 0 0 9px;
 }
 
 .outer-toolbar-title {
@@ -616,36 +673,19 @@ button.medium-button {
 }
 
 .posts-cards {
-    padding: 52px 16px 32px 16px;
+    padding: 48px 0px 0px 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
 .post-card {
-    width: calc(25% - 32px);
+    width: calc(100% - 32px);
     margin: 16px;
-    height: 356px;
+    height: 360px;
     background-color: rgba(12, 2, 3, 1) !important;
     border-radius: 2px;
-}
-
-@media (max-width: 1440px) {
-    .post-card {
-        width: calc(33% - 32px);
-    }
-}
-
-@media (max-width: 1140px) {
-    .post-card {
-        width: calc(50% - 32px);
-    }
-}
-
-@media (max-width: 425px) {
-    .post-card {
-        width: calc(100% - 32px);
-    }
+    display: inline-block;
 }
 
 .post-card-header, .post-card-header-section, .post-card-header-overlay {
@@ -793,6 +833,85 @@ button.medium-button {
     .posts-filter-bar {
         display: none;
     }
+}
+
+@media (max-width: 540px) {
+    .post-card {
+        margin: 16px 0px;
+        width: calc(100% - 0px);
+    }
+}
+
+@media (max-width: 425px) {
+
+    .posts-cards {
+        padding: 62px 0px 32px 0px;
+    }
+    /*.post-card {
+        width: 100%;
+        height: 128px;
+        margin: 0px 0px 16px 0px;
+        border-radius: 0;
+    }
+
+    .post-card-header {
+        display: inline-block;
+    }
+
+    .post-card-header, .post-card-header-section, .post-card-header-overlay {
+        height: 128px;
+        width: 128px;
+        min-width: auto;
+    }
+
+    .post-card-header-section {
+        margin-top: -128px;
+    }
+
+    .post-card-header-overlay {
+        border-radius: 0;
+    }
+
+    .post-card-body-title {
+        font-size: 16px;
+        max-height: 54px;
+        min-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .post-card-header-section-bottom {
+        display: none;
+    }
+
+    .post-card-body {
+        height: 96px;
+        display: inline-flex;
+        width: calc(100% - 160px);
+    }
+
+    .post-card-body-description-metadata {
+        display: inline;
+    }
+
+    .post-card-body-description {
+        font-size: 12px;
+    }
+
+    .post-card-body-appreciation {
+        margin-top: -5px;
+        border-radius: 0;
+    }*/
+}
+
+@media (max-width: 320px) {
+
+    /*.post-card-header, .post-card-header-section, .post-card-header-overlay {
+        display: none;
+    }
+
+    .post-card-body {
+        width: calc(100% - 32px);
+    }*/
 }
 
 /* POST */
@@ -967,7 +1086,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
         box-shadow: initial;
     }
 
-    .single-post-footer, .single-post-actions {
+    .single-post-footer, .single-post-actions, .single-post-comments {
         display: none;
     }
 }
@@ -1325,11 +1444,11 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     height: 128px;
     border-radius: 50%;
     display: inline-block;
-    cursor: pointer;
+    cursor: wait;
     margin: auto;
     background-position: center center;
     background-color: #440800;
-    background-size: 132%;
+    background-size: 109%;
     box-shadow: 0 0 0 2px rgba(68, 3, 0, 0), 0 0 2px 4px rgba(68, 3, 0, .11);
     transition: all ease-in .32s;
 }
@@ -1341,25 +1460,26 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 
 
 @keyframes profileReputationShadowAnimation {
-    0%   { box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.18), 0 0 2px 4px rgba(255, 255, 255, 0.44);}
-    20%  { box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.44), 0 0 2px 4px rgba(255, 255, 255, 0.88);}
-    50%   { box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.18), 0 0 2px 4px rgba(255, 255, 255, 0.44);}
-    80%  { box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.44), 0 0 2px 4px rgba(255, 255, 255, 0.88);}
-    100% { box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.18), 0 0 2px 4px rgba(255, 255, 255, 0.44);}
+    0%   { box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.18), 0 0 2px 4px rgba(28, 1, 1, 0.44);}
+    20%  { box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.44), 0 0 2px 4px rgba(28, 1, 1, 0.88);}
+    50%   { box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.18), 0 0 2px 4px rgba(28, 1, 1, 0.44);}
+    80%  { box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.44), 0 0 2px 4px rgba(28, 1, 1, 0.88);}
+    100% { box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.18), 0 0 2px 4px rgba(28, 1, 1, 0.44);}
 
 }
 
 .profile-header-top-section-information-profile-reputation {
     margin: -16px auto auto -16px;
     position: absolute;
+    cursor: progress;
     width: 19px;
     height: 19px;
     padding: 8px;
     display: inline-block;
     border-radius: 50%;
-    background-color: #ffffff;
-    color: black;
-    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.18), 0 0 2px 4px rgba(255, 255, 255, 0.44);
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.18), 0 0 2px 4px rgba(28, 1, 1, 0.44);
     animation: profileReputationShadowAnimation 8.4s infinite ease-in-out;
 }
 
@@ -1635,6 +1755,10 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 }
 
 /* HELP */
+.help-page {
+    padding: 0px 32px 0px 32px;
+}
+
 .help-card {
     max-width: 800px;
     margin: 32px auto 16px auto;
@@ -1642,6 +1766,38 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     background-color: #0c0203;
     border-radius: 2px;
 }
+
+@media (max-width: 800px) {
+
+    .help-page {
+        padding: 0px;
+    }
+}
+
+/* HYPESQUAD */
+.hypesquad-page {
+    padding: 0px 32px 0px 32px;
+}
+
+.hypesquad-card {
+    max-width: 800px;
+    margin: 32px auto 16px auto;
+    padding: 16px 32px;
+    background-color: #0c0203;
+    border-radius: 2px;
+    background-image: url(/images/blood-brain.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+
+    .hypesquad-page {
+        padding: 0px;
+    }
+}
+
 
 @media (max-width: 800px) {
 
@@ -1691,83 +1847,5 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     .posts-filter-bar {
         padding: 0px;
         width: 100%;
-    }
-}
-
-
-@media (max-width: 425px) {
-
-    .posts-cards {
-        padding: 62px 0px 32px 0px;
-    }
-
-    .post-card {
-        width: 100%;
-        height: 128px;
-        margin: 0px 0px 16px 0px;
-        border-radius: 0;
-    }
-
-    .post-card-header {
-        display: inline-block;
-    }
-
-    .post-card-header .LazyLoad {
-        height: 128px !important;
-    }
-
-    .post-card-header, .post-card-header-section, .post-card-header-overlay {
-        height: 128px;
-        width: 128px;
-        min-width: auto;
-    }
-
-    .post-card-header-section {
-        margin-top: -128px;
-    }
-
-    .post-card-header-overlay {
-        border-radius: 0;
-    }
-
-    .post-card-body-title {
-        font-size: 16px;
-        max-height: 54px;
-        min-height: 24px;
-        margin-bottom: 8px;
-    }
-
-    .post-card-header-section-bottom {
-        display: none;
-    }
-
-    .post-card-body {
-        height: 96px;
-        display: inline-flex;
-        width: calc(100% - 160px);
-    }
-
-    .post-card-body-description-metadata {
-        display: inline;
-    }
-
-    .post-card-body-description {
-        font-size: 12px;
-    }
-
-    .post-card-body-appreciation {
-        margin-top: -5px;
-        border-radius: 0;
-    }
-}
-
-@media (max-width: 320px) {
-
-    .post-card-header, .post-card-header-section, .post-card-header-overlay {
-        display: none;
-    }
-
-    .post-card-body {
-        width: calc(100% - 32px);
     }
 }
