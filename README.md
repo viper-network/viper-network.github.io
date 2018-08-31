@@ -4,11 +4,9 @@ Web application to browse the Steem blockchain with such swag much ease.
 
 # Contributing
 
-Viper complex adaptive system, team and users greatly appreciate contributions of any kind.
+Viper's team and users greatly appreciate contributions of any kind.
 
 ## Feedback
-
-Feeback provide very useful positive and negative information feeded back to the system which permit us to correct and improve our system in order to increase you pleasure and ease of use while using Viper.
 
 We're currently looking for more "average" user's feedback mainly concerning colours, design etc.. it is our priority, performance along with security-related feedback are still welcome but no longer needed. Thanks for sharing the app and feedback to non IT oriented folks!
 
@@ -29,7 +27,7 @@ Thanks in advance for improving the quality of Viper.
  * Viper  
    * Steem blockchain browsering
    * IPFS sounds and video storage
-   * CIA-proof private keys encryption
+   * Quantum-proof private keys encryption
    * Offline storage up to 11007 MB
    * Articles and Videos browsering
    * High and well tested security by paranoid nerds
