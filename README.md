@@ -4,8 +4,6 @@ Web application to browse the Steem blockchain with such swag much ease built us
 
 In a true open source "by the people, for the people" nature, we try to work closely with our community and invite everyone to have their say to provide a better overall experience, aiming to create an web environment and application that is profesionnal and easy to use, while still having a lot of great things to build.
 
-We try to maintain a standard of friendly behaviour in our community, so don't be afraid to speak up and have your say in building this software for us all!
-
 # Contributing
 
 Viper's team and users greatly appreciate contributions of any kind.
