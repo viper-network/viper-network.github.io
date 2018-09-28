@@ -548,25 +548,25 @@ button.medium-button {
     background: linear-gradient(to right, #470901, #210608, #0c0203) !important;
 }
 
-.menu-bar-menu-list-item {
+/* .menu-bar-menu-list-item {
     /*background-color: rgba(172, 18, 35, 0) !important;*/
-    background: linear-gradient(to top, #0c0203, #0c0203, #0c0203, #0c0203) !important;
+    /*background: linear-gradient(to top, #0c0203, #0c0203, #0c0203, #0c0203) !important;
     height: 46px !important;
     border: 1px solid #0c0203 !important;
     border-left: 4px solid #0c0203 !important;
     transition: all 0ms cubic-bezier(0.23, 1, 0.32, 1) !important;
-}
+}*/
 
-.menu-bar-menu-list-item:hover {
+/*.menu-bar-menu-list-item:hover {
     background-color: rgba(172, 18, 35, 0) !important;
     /*background: linear-gradient(to right, #290305, #190303, #0c0203) !important;*/
     /*background: linear-gradient(to right, #470901, #290305, #190303, #0c0203) !important;*/
-    background: linear-gradient(to top, #190303, #290305, #290305, #190303) !important; /* 210405 */
-    border: 1px solid #290305 !important;
+    /*background: linear-gradient(to top, #190303, #290305, #290305, #190303) !important; /* 210405 */
+    /*border: 1px solid #290305 !important;
     border-left: 4px solid #470901 !important;
     text-shadow: rgba(172, 18, 35, .49) 0 0 10px !important;
     transition: all 0ms cubic-bezier(0.23, 1, 0.32, 1) !important;
-}
+}*/
 
 @media print {
     .menu-bar {
@@ -1809,11 +1809,22 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 }
 
 /* HELP */
-.help-page {
+.help-sub-page-bar {
+    padding: 12px 32px 0px 32px;
+    height: 48px;
+    line-height: 48px;
+    position: fixed;
+    width: calc(100% - 320px);
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 4;
+}
+
+.help-sub-page-content {
+    margin-top: 60px;
     padding: 0px 32px 0px 32px;
 }
 
-.help-card {
+.help-page-faq-card, .wiki-page-faq-card, .community-page-faq-card, .blog-page-faq-card {
     max-width: 800px;
     margin: 32px auto 16px auto;
     padding: 16px 32px;
@@ -1823,8 +1834,9 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 
 @media (max-width: 800px) {
 
-    .help-page {
-        padding: 0px;
+    .help-sub-page-content {
+        margin-top: 48px;
+        padding: 0;
     }
 }
 
@@ -1898,7 +1910,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
         min-height: calc(100% - 56px);
     }
 
-    .posts-filter-bar {
+    .posts-filter-bar,.help-sub-page-bar {
         padding: 0px;
         width: 100%;
     }
