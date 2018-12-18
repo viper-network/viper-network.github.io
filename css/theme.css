@@ -381,7 +381,6 @@ button.medium-button {
     vertical-align: top;
     cursor: pointer;
     background-color: #440800;
-    background-image: url("/images/hatch_strip_square_red.png");
     color: #ffffff;
     box-shadow: 0px 0px 0px #440800;
     transition: background-color ease-out .32s;
@@ -1807,13 +1806,6 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     padding: 32px 32px;
     background-color: #0c0203;
     border-radius: 2px;
-}
-
-@media (max-width: 800px) {
-
-    .settings-page {
-        padding: 0px 0px 0px 0px;
-    }
 }
 
 /* HELP */
