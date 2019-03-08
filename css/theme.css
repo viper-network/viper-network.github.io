@@ -112,7 +112,7 @@ span[role=menuitem] div div svg {
 }
 
 ::-webkit-scrollbar-track  {
-    background-color: #0c0203;
+    background-color: #000000;
 }
 
 ::-webkit-scrollbar  {
@@ -199,17 +199,17 @@ p, p a, li, ol {
 }
 
 .dark-primary-color {
-    background-color: #0c0203 !important;
+    background-color: #090909 !important;
     color: #ffffff;
 }
 
 .medium-primary-color {
-    background-color: #190506 !important; /* #130303   */
+    background-color: #000000 !important; /* #130303   */
     color: #ffffff;
 }
 
 .light-primary-color {
-    background-color: #440800 !important;
+    background-color: #101010 !important;
     color: #ffffff;
 }
 
@@ -582,7 +582,7 @@ button.medium-button {
     width: calc(100% - 256px);
     margin-left: 256px;
     min-height: calc(100% - 64px);
-    background-color: #1c0001; /* #130101 */ /* #120101 */ /* #1b0001 */
+    background-color: #101010; /* #130101 */ /* #120101 */ /* #1b0001 */
     color: #ffffff;
 
     /*background-attachment: fixed;
@@ -719,8 +719,15 @@ button.medium-button {
     z-index: 4;
 }
 
+@media (max-width: 800px) {
+
+    .posts-cards {
+        padding: 48px 0px 0px 0px;
+    }
+}
+
 .posts-cards {
-    padding: 48px 0px 0px 0px;
+    padding: 64px 16px 0px 16px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -730,9 +737,37 @@ button.medium-button {
     width: calc(100% - 32px);
     margin: 16px;
     height: 360px;
-    background-color: rgba(12, 2, 3, 1) !important;
+    background-color: rgba(0, 0, 0, 1) !important;
     border-radius: 2px;
     display: inline-block;
+}
+
+@media (max-width: 99999999px) {
+
+    .post-card {
+        width: calc(25% - 32px);
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .post-card {
+        width: calc(33% - 32px);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .post-card {
+        width: calc(50% - 32px);
+    }
+}
+
+@media (max-width: 540px) {
+
+    .post-card {
+        width: calc(100% - 32px);
+    }
 }
 
 .post-card-header, .post-card-header-section, .post-card-header-overlay {
@@ -894,7 +929,8 @@ button.medium-button {
     .posts-cards {
         padding: 62px 0px 32px 0px;
     }
-    /*.post-card {
+
+    .post-card {
         width: 100%;
         height: 128px;
         margin: 0px 0px 16px 0px;
@@ -947,18 +983,18 @@ button.medium-button {
     .post-card-body-appreciation {
         margin-top: -5px;
         border-radius: 0;
-    }*/
+    }
 }
 
 @media (max-width: 320px) {
 
-    /*.post-card-header, .post-card-header-section, .post-card-header-overlay {
+    .post-card-header, .post-card-header-section, .post-card-header-overlay {
         display: none;
     }
 
     .post-card-body {
         width: calc(100% - 32px);
-    }*/
+    }
 }
 
 /* POST */
@@ -967,7 +1003,7 @@ button.medium-button {
 }
 
 .single-post {
-    border-radius: 2px;
+    border-radius: 16px;
     max-width: 800px;
     margin: 32px auto 32px auto;
     padding: 32px;
@@ -1409,7 +1445,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 .vip-editor {
     width: 100%;
     margin-bottom: 32px;
-    background-color: #0c0203;
+    background-color: #000000;
     font-size: 18px;
 }
 
@@ -1570,7 +1606,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 }
 
 .profile-page-header-bottom {
-    background-color: #0c0203;
+    background-color: #000000;
     border-radius: 0px 0px 2px 2px;
 }
 
@@ -1670,7 +1706,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
 
 /* VIP CARD */
 .vip-card {
-    background-color: #0c0203;
+    background-color: #000000;
     margin-bottom: 32px;
     width: 100%;
     border-radius: 2px;
@@ -1805,15 +1841,8 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     max-width: 800px;
     margin: 32px auto 32px auto;
     padding: 32px 32px;
-    background-color: #0c0203;
+    background-color: #000000;
     border-radius: 2px;
-}
-
-@media (max-width: 800px) {
-
-    .settings-page {
-        padding: 0px 0px 0px 0px;
-    }
 }
 
 /* HELP */
@@ -1836,7 +1865,7 @@ a:hover .single-post-footer-author .single-post-footer-author-image {
     max-width: 800px;
     margin: 32px auto 16px auto;
     padding: 16px 32px;
-    background-color: #0c0203;
+    background-color: #000000;
     border-radius: 2px;
 }
 
