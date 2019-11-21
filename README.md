@@ -48,7 +48,10 @@ Thanks in advance for improving the quality of Viper.
    
 # Notes
 
-https://raw.githubusercontent.com/viper-network/viper-network.github.io/master/Screenshot%20from%202019-11-21%2003-43-42.png   
+![](https://raw.githubusercontent.com/viper-network/viper-network.github.io/master/Screenshot%20from%202019-11-21%2003-43-42.png)
+
+![](https://cdn.vox-cdn.com/thumbor/7DjS4U-LEC9GlTq5_p3eZiit2ss=/0x0:1200x630/1400x1400/filters:focal(504x219:696x411):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/53086723/duck_and_dog.0.png)
+
 Better get human rights before copyright.
 
 # License
