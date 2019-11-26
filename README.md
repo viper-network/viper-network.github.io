@@ -29,7 +29,7 @@ Thanks in advance for improving the quality of Viper.
  * Viper  
    * Steem blockchain browsering
    * IPFS sounds and video storage
-   * Quantum-proof private keys encryption
+   * Quantum-proof private keys encryption (ILLEGAL IN MANY COUNTRIES)
    * Offline storage up to 11007 MB
    * Articles and Videos browsering
    * High and well tested security by paranoid nerds
