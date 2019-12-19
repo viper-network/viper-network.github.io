@@ -4,6 +4,8 @@ Web application to browse the Steem blockchain with such swag much ease built us
 
 In a true open source "by the people, for the people" nature, we try to work closely with our community and invite everyone to have their say to provide a better overall experience, aiming to create an web environment and application that is profesionnal and easy to use, while still having a lot of great things to build.
 
+[FREE Download (Mediafire)](http://www.mediafire.com/file/7orle3240ibcj4l/viper-application.zip/file)
+
 # Contributing
 
 Viper's team and users greatly appreciate contributions of any kind.
@@ -50,6 +52,8 @@ Thanks in advance for improving the quality of Viper.
 
 Better get human rights before copyright.
 
+![](https://image.noelshack.com/fichiers/2019/47/4/1574305614-1526134714439.jpg)
+
 Hell's warth UI design.
 
 # License
@@ -59,5 +63,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-![](https://image.noelshack.com/fichiers/2019/47/4/1574305614-1526134714439.jpg)
