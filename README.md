@@ -4,7 +4,7 @@ Web application to browse the Steem blockchain with such swag much ease built us
 
 In a true open source "by the people, for the people" nature, we try to work closely with our community and invite everyone to have their say to provide a better overall experience, aiming to create an web environment and application that is profesionnal and easy to use, while still having a lot of great things to build.
 
-[FREE Download (Mediafire)](http://www.mediafire.com/file/7orle3240ibcj4l/viper-application.zip/file)
+**With more than 2200 supporters at its release, now available at:** [FREE Download (Mediafire)](http://www.mediafire.com/file/7orle3240ibcj4l/viper-application.zip/file)
 
 # Contributing
 
